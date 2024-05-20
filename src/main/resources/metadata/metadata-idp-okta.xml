@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor entityID="http://www.okta.com/exkh5vmrt0qE3U1n15d7"
+                     xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">
+    <md:IDPSSODescriptor WantAuthnRequestsSigned="false"
+                         protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIDqDCCApCgAwIBAgIGAY+HUENlMA0GCSqGSIb3DQEBCwUAMIGUMQswCQYDVQQGEwJVUzETMBEG
+                        A1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEU
+                        MBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi03NTAwNzU5NDEcMBoGCSqGSIb3DQEJ
+                        ARYNaW5mb0Bva3RhLmNvbTAeFw0yNDA1MTcxNjA3NTVaFw0zNDA1MTcxNjA4NTVaMIGUMQswCQYD
+                        VQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsG
+                        A1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi03NTAwNzU5NDEc
+                        MBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+                        ggEBAKFYOk1FmQ5Rql5BUkEguB53TfVktHO/SMu6yZtykLsOYsWUI5c4uvlRSHBqzCWKojo+b0VN
+                        t5LakcFdIlSfKWVkKeK1Zd4TNhVQaOKyfIrCnuKKvuSbga+w/1Qp+AnYquxfLXLKMJE+Duvp0mEg
+                        SRuLvwHgM9DyLOdJPMSaPRjUNNV9jSwLAii2N8RIMVkdjpyPcskpgCtNIPiV9vpHa1t36/ssFib2
+                        GzgEv6xrVvYR57/IQoIdM1Hc8swYvM+8/PWHH8LS9HQhzWaEu1psqEy7v6YGh7LTRXRDSPf8v707
+                        z++s14VCsDVmt5dZtSZ4Hkw8Hl+Tfx9HeP3uCJn3/asCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEA
+                        OnS9SrkduMD5m4WUnFGMKF15aWYaC78I1kFemoypx7QFkgWQnidTW9pbYwlSN/fKPNUxfIA6ttbq
+                        HATEhY1Q+r11J7Cd5Esq63WOMBD2RiJC7lKVwK+FB/3mBlLIy/umJMzNCB4BSOcqWUAulK60nJpc
+                        pmqrtX97wr8aZDXcHfhBk7vRJGY/MDscXbDR2SLHIGC78MSlGfS+vuTiyFVn40vd2B6EItBEMvTC
+                        qKkZD3SEKmi/Uf2ue2WgKtyoqVmyQX2jIJZbfRMt+5fS2T9hiwd8IqXPrXLz4VihZPNNThUSwClj
+                        PYKLy8M+64NUh0eP++nep9W+1JpM8jZnWuotKA==
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="https://dev-75007594.okta.com/app/dev-75007594_saml2app_1/exkh5vmrt0qE3U1n15d7/slo/saml"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                Location="https://dev-75007594.okta.com/app/dev-75007594_saml2app_1/exkh5vmrt0qE3U1n15d7/slo/saml"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="https://dev-75007594.okta.com/app/dev-75007594_saml2app_1/exkh5vmrt0qE3U1n15d7/sso/saml"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                Location="https://dev-75007594.okta.com/app/dev-75007594_saml2app_1/exkh5vmrt0qE3U1n15d7/sso/saml"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>

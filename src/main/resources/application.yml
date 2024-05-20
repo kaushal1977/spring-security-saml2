@@ -1,0 +1,29 @@
+spring:
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          okta:
+            signing:
+              credentials:
+                - private-key-location: classpath:local.key
+                  certificate-location: classpath:local.crt
+            singlelogout:
+              url: https://dev-75007594.okta.com/app/dev-75007594_saml2app_1/exkh5vmrt0qE3U1n15d7/slo/saml
+
+              binding: POST
+              response-url: "{baseUrl}/logout/saml2/slo"
+            assertingparty:
+              metadata-uri: "classpath:metadata/metadata-idp-okta.xml"
+            entityId: http://www.okta.com/exkh5vmrt0qE3U1n15d7
+            singleSignOnServiceLocation: https://localhost/login/saml2/sso/okta
+            audience: http://www.okta.com/exkh5vmrt0qE3U1n15d7
+
+
+server:
+  port: 443 #this port is used for https connections in browsers by default
+  ssl:
+    certificate-private-key: classpath:local.key
+    certificate: classpath:local.crt
+
+#baseUrl: https://localhost
